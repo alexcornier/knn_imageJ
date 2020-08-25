@@ -1,0 +1,6 @@
+run("8-bit");
+run("Divide...", "value=2");
+run("Add Specified Noise...", "standard=25");
+run("Montage to Stack...", "columns=32 rows=32 border=0");
+run("Set Measurements...", "area mean min centroid shape redirect=None decimal=3");
+run("Measure Stack...");

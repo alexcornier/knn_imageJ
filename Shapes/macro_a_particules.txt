@@ -1,0 +1,11 @@
+run("8-bit");
+run("Invert");
+run("Canvas Size...", "width=1000 height=700 position=Center zero");
+setAutoThreshold("Otsu dark");
+//run("Threshold...");
+//setThreshold(126, 255);
+setOption("BlackBackground", false);
+run("Convert to Mask");
+run("Close");
+run("Set Measurements...", "area centroid shape redirect=None decimal=3");
+run("Analyze Particles...", "  show=Outlines display");
